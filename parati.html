@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Para Ti ❤️</title>
+
+<style>
+body{
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor{
+    max-width: 600px;
+    padding: 20px;
+}
+
+button{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #ee9ca7;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover{
+    background: #ffeef2;
+}
+
+.caja{
+    display: none;
+}
+</style>
+
+</head>
+<body>
+
+<div id="contenedor">
+
+    <div id="inicio">
+        <h1>❤️ Tengo una pregunta para ti❤️</h1>
+        <p>¿Sabes quién es una de las personas que más admiro?</p>
+        <button onclick="mostrar1()">Descúbrelo</button>
+    </div>
+
+    <div class="caja" id="pantalla1">
+        <h1>✨ Eres tú ✨</h1>
+        <p>
+            Porque tu forma de ser, tu fuerza , tu valentía para salir
+            adelante y afrontar todo día tras día.
+        </p>
+        <button onclick="mostrar2()">Pero hay algo más...</button>
+    </div>
+
+    <div class="caja" id="pantalla2">
+        <h1>🌷</h1>
+        <p>
+            Gracias por ser una mujer tan admirable.<br><br>
+
+            No sé qué nos depare el futuro,<br>
+            pero sí sé que me alegra haberte conocido!
+            Mis días son mas felices contigo.
+        </p>
+        <button onclick="mostrar3()">Y una última cosa ❤️</button>
+    </div>
+
+    <div class="caja" id="pantalla3">
+        <h1>❤️</h1>
+        <h2>Solo quería recordarte que...</h2>
+        <h1>Tu sonrisa hace más bonitos mis días, tus ojos, tu manera de vestir,
+            la manera que me miras, caminas, TODOO ME GUSTA 😊</h1>
+    </div>
+
+</div>
+
+<script>
+
+function mostrar1(){
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("pantalla1").style.display = "block";
+}
+
+function mostrar2(){
+    document.getElementById("pantalla1").style.display = "none";
+    document.getElementById("pantalla2").style.display = "block";
+}
+
+function mostrar3(){
+    document.getElementById("pantalla2").style.display = "none";
+    document.getElementById("pantalla3").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
+```
+
